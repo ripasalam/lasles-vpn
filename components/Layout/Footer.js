@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import Logo from '../../public/assets/Logo.svg'
 const Footer = () => {
     return (
         <div className='bg-dark-200 pt-52 pb-10 '>
             <div className='max-w-screen-xl mx-auto px-8 lg:px-16'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 '>
                     <div className=' w-full sm:w-7/12 justify-self-start' >
-                        <Image src={'/assets/Logo.png'} width={149} height={36.23} />
+                        <Image loading='lazy' src={Logo} width={149} height={36.23} />
                         <p className='pt-5 text-dark-500 leading-8  '><strong>LaslesVPN</strong> is a private virtual network that has unique features and has high security.</p>
                         <div className='flex flex-row gap-5 mt-5'>
                             <div className='bg-white rounded-full h-10 w-10 p-3 shadow-md'>

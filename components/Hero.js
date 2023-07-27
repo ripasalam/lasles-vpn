@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import ScrolledAnimation from './ScrolledAnimation'
 import getScrolledAnimation from '@/utils/getScrolledAnimation'
-
+import heroImages from '../public/assets/Illustration-1.png'
 
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
                             <button className='w-full lg:w-7/12 px-20 py-4 hover:shadow-lg hover:shadow-brand-500 bg-brand-500 rounded-xl text-white font-bold'>Get Started</button>
                         </div>
                         <motion.div className='row-start-1' variants={scrollAnimation}>
-                            <Image src={'/assets/Illustration-1.png'} width={611.24} height={382.44} alt='hero' className='w-full' />
+                            <Image src={heroImages} width={611.24} height={382.44} alt='hero' className='w-full' />
                         </motion.div>
                     </motion.div>
 
@@ -37,7 +37,7 @@ const Hero = () => {
                         <motion.div variants={scrollAnimation} className='flex px-5  justify-between  items-center lg:justify-center gap-5 py-4  '>
                             <Image src={'/assets/location.png'} width={55} height={55} alt='user' />
                             <div>
-                                <p className=' text-dark-900 font-bold text-2xl'>30+</p>
+                                <p className=' text-dark-900 text-right lg:text-left font-bold text-2xl'>30+</p>
                                 <p className='text-dark-500 text-xl'>Locations</p>
                             </div>
                         </motion.div>

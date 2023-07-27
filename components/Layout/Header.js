@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
+import Logo from '../../public/assets/Logo.svg'
 
 
 const Header = () => {
@@ -25,7 +26,7 @@ const Header = () => {
         <header className={'w-full top-0 z-50 fixed bg-white transition-all ' + (navbarScrolled ? 'shadow-lg' : 'pt-4')}>
             <nav className=' max-w-screen-xl px-8 lg:px-16 py-3 sm:py-4 mx-auto grid grid-flow-col'>
                 <div className=' col-start-1 col-end-2 items-center'>
-                    <Image className='h-10' src={'/assets/Logo.png'} width={149} height={36.23} alt='logo' />
+                    <Image className='h-10' src={Logo} width={149} height={36.23} alt='logo' />
                 </div>
                 <div onClick={() => { setNavbar(!navbar) }} className='lg:hidden flex col-start-3 items-center justify-end cursor-pointer'>
                     {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}

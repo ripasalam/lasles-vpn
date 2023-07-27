@@ -9,8 +9,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>LaslesVPN</title>
+        <link rel="icon" href="/assets/head-logo.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
       </Head>
       <Layout>
         <Hero />
