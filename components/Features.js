@@ -27,7 +27,7 @@ const Features = () => {
 
                         </ScrolledAnimation>
                         <ScrolledAnimation>
-                            <motion.div className=' flex flex-col items-start ml-auto justify-center  w-full lg:w-9/12 '>
+                            <motion.div variants={scrollAnimation} className=' flex flex-col items- ml-auto justify-center  w-full lg:w-9/12 '>
                                 <h1 className='text-4xl font-medium pt-12 mb-5'>We Provide Many Features You Can Use</h1>
                                 <p className='text-dark-500 leading-8 mb-5'>You can explore the features that we provide with fun and have their own functions each feature.</p>
                                 <ul className='flex flex-col gap-5  text-dark-500'>
