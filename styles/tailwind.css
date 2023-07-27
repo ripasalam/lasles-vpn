@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+
+
+/* purgecss start ignore */
+@layer base {
+  html {
+
+    font-family: 'Rubik';
+    @apply scroll-smooth
+  }
+
+}
+
+
+.animation-hover:after {
+  position:absolute;
+  content: "";
+  height: 2px;
+  transition: all .5s;
+  @apply w-0 bg-brand-300 left-1/2 block bottom-0 absolute;
+}
+
+.animation-hover:hover:after {
+  @apply left-0 w-full;
+}
+
+.animation-active:after {
+   @apply left-0 w-full;
+}
+
+
+.slick-active a span{
+  @apply bg-brand-500 w-7 mx-3
+}
+.slick-dots li {
+  @apply inline-block;
+}
+/* purgecss end ignore */
+@tailwind utilities;
