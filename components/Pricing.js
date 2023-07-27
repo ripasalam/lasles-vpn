@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import ScrolledAnimation from './ScrolledAnimation'
 import getScrolledAnimation from '@/utils/getScrolledAnimation'
+import freeImg from '../public/assets/Free.png'
+import standardImg from '../public/assets/Standard.png'
+import premiumImg from '../public/assets/Premium.png'
 
 const Pricing = () => {
     const scrollAnimation = useMemo(() => getScrolledAnimation(), [])
@@ -31,7 +34,7 @@ const Pricing = () => {
                                 }}
                             >
                                 <div className='w-full flex justify-center'>
-                                    <Image src={'/assets/free.png'} width={144.9} height={165.37} className='object-center' />
+                                    <Image src={freeImg} width={144.9} height={165.37} className='object-center' />
                                 </div>
                                 <h6 className='mt-7 font-medium text-lg text-center'>Free plan</h6>
                                 <div className='flex-grow'>
